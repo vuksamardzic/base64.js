@@ -1,0 +1,25 @@
+{
+  "name": "base64",
+  "version": "1.0.0",
+  "description": "simple library that converts image files to base64",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuksamardzic/base64.js.git"
+  },
+  "keywords": [
+    "base64",
+    "convert",
+    "image",
+    "image-base64"
+  ],
+  "author": "vuk samardžić",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuksamardzic/base64.js/issues"
+  },
+  "homepage": "https://github.com/vuksamardzic/base64.js#readme"
+}
