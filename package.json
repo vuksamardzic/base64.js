@@ -4,7 +4,8 @@
   "description": "simple library that converts image files to base64",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/webpack-dev-server --mode development --open",
+    "prod": "./node_modules/.bin/webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/vuksamardzic/base64.js/issues"
   },
-  "homepage": "https://github.com/vuksamardzic/base64.js#readme"
+  "homepage": "https://github.com/vuksamardzic/base64.js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "yargs": "^12.0.2"
+  }
 }
