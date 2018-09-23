@@ -15,7 +15,10 @@ if (mode === 'development') {
 }
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    '@babel/polyfill',
+    './src/index.js'
+  ],
   output: {
     path: path.resolve(__dirname, dir),
     filename: filename,
