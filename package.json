@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --mode development --open",
-    "prod": "./node_modules/.bin/webpack --mode production"
+    "prod": "./node_modules/.bin/webpack --mode production",
+    "deploy": "surge -p ./demo -d base64.surge.sh",
+    "deploy:prod": "./node_modules/.bin/webpack --deploy true --mode production"
   },
   "repository": {
     "type": "git",
