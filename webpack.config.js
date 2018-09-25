@@ -1,5 +1,6 @@
 const path = require('path');
 const mode = require('yargs').argv.mode;
+const deploy = require('yargs').argv.deploy;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const library_name = 'base64';
@@ -8,6 +9,13 @@ let dir = 'lib';
 let plugins = [];
 
 if (mode === 'development') {
+  plugins.push(new HtmlWebpackPlugin({
+    template: './demo/index.html',
+    inject: 'head'
+  }));
+}
+if (deploy) {
+  dir = 'demo';
   plugins.push(new HtmlWebpackPlugin({
     template: './demo/index.html',
     inject: 'head'
